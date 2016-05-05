@@ -1,1 +1,35 @@
-hh
+Database from Mai Xu, Lai Jiang, Xin Deng in Beihang University(2015). 
+
+This database contains the fixation data of 33 standard video sequences of HEVC.
+
+In 'video_database.mat', you can find
+
+	videos_info: the information of 33 videos 
+
+	video_names_list: the index for 33 videos
+
+	subj_info: the information of 32 participants 
+
+	subj_names_list: the index for 32 participants
+
+	fixdata: contains fixation data of all videos from all participants.
+
+	fixdata_fields: 
+    '1: SubjectIndex (see subj_names_list)'
+    '2: VideoIndex (see video_names_list)'
+    '3: Timestamp (milliseconds after image display)'
+    '4: GazeDuration'
+    '5-6: fixation position (take upper-lift corner as origin )'
+   
+e.g. If a row in fixdata is '6 29 4084 183 467 319', that means this fixation is in 'ChinaSpeed.avi' recorded from JL. The start time and the duration of this fixation is 4084ms and 183ms, respectively, with the location (467,391).
+
+As a test, you can run 'demo.m' to view the heat-map series of the target video.  
+
+Should you have any queries, please contact Maixu@buaa.edu.cn
+
+
+Have fun!
+
+----------------------------
+
+
